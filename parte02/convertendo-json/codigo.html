@@ -1,0 +1,36 @@
+<html>
+<meta charset="UTF-8">
+<script>
+    //JSON - JavaScript Object Notation
+    //JSON.stringify()
+    //JSON. parse()
+
+    const people = [
+        {
+            id: 1,
+            name: "Dudu",
+            lastname: "Montz",
+            bornDate: new Date(1996, 7, 10),
+            address: {
+                city: "Faria Lemos",
+            },
+        },
+        {
+            id: 2,
+            name: "Vitor",
+            lastname: "Gomes",
+            bornDate: new Date(1994, 4, 17),
+            address: {
+                city: "Carangola",
+            },
+        },
+    ]
+
+    console.log(JSON.stringify(people)) //conversão de obj para uma string
+
+    const json = '[{ "id": 1, "name": "Dudu", "lastname": "Montz", "bornDate": "1996-08-10T03:00:00.000Z", "address": { "city": "Faria Lemos" } }, { "id": 2, "name": "Vitor", "lastname": "Gomes", "bornDate": "1994-05-17T03:00:00.000Z", "address": { "city": "Carangola" } }]'
+
+    console.log(JSON.parse(json)) //tranformade string / JSON -> Objetos
+</script>
+
+</html>
