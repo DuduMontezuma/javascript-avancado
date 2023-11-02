@@ -1,0 +1,39 @@
+<html>
+    <meta charset="UTF-8">
+    <script>
+        let people = ["Dudu", "Kezia", "Paulo", "Felipe", "André"]
+
+        // 0 -> n
+
+        //Retornar elementos específicos de um array
+        console,log(people[2])
+        console,log(people[people.length - 1]) //retorna o último elemento
+
+        // Retornar "fatias" de um array
+        console.log(people.slice(2)) // Vai retornar do 2 pra frente
+        console.log(people.slice(1, 3)) // Vai retornar do 1 ao 3
+
+        // Adicionar novos elementos no array (inicio e fim)
+        people.push("Ana") // adiciona no final
+        people.unshift("Maria") // adiciona no início
+
+        console.log(people)
+
+        // Remover elementos no array (inicio e fim)
+        people.pop() //Remove do fim do array e retorna o elemento removido
+        people.shift() //Remove elemento do início e retorna o elemento removido
+        console.log(people)
+
+        // Remover "fatias" de array
+        people.splice(1, 2) //Vai remover, a partir do 1, 2 elementos contando com ele
+        console.log(people)
+
+        // Localizar alementos
+        let index = people.indexOf("Felipe") //Retorna o indice do valor pedido
+        people.slice(index, 1)
+
+        console.log(index)
+
+
+    </script>
+</html>
