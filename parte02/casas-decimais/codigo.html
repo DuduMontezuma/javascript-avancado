@@ -1,0 +1,23 @@
+<html>
+    <meta charset="UTF-8">
+    <script>
+        // toFixed()
+        // Math.ceil()
+        // Math.floor()
+        // Math.round()
+        //new Intl.NumberFormat().format()
+        let value = 1234.59
+
+        console.log(value.toFixed(1))
+        console.log(Math.ceil(value))
+        console.log(Math.floor(value))
+        console.log(Math.round(value))
+        console.log(
+            new Intl.NumberFormat("pt-br"), {
+                style: "currency",
+                currency: "BRL"
+            } . format(value)
+        )
+
+    </script>
+</html>
