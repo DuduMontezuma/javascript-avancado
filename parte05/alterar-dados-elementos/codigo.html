@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curriculum</title>
+    </head>
+    <body>
+        <h1 id="person-name" class="title">Seu nome</h1>
+        <h2>Programador JavaScript</h2>
+        <p>
+            Conhecimento em programação Frontend, Backend para desenvolvimento
+            de
+            Sistemas Fullstack.
+        </p>
+        <p>
+            Para mais detalhes, por favor, visite meu
+            <a href="http://github.com/dudumontezuma">Github</a>
+            <a href="www.linkedin.com/in/carloseduardomontezuma"></a>
+        </p>
+        <script>
+            // Alterando um objeto com DOM
+
+            const titleEl = document.querySelector("#person-name")
+            console.log("titleEl value:", titleEl.innerHTML)
+
+            titleEl.innerHTML = "Dudu Montezuma"
+            titleEl.style.color = "red"
+        </script>
+    </body>
+</html>
