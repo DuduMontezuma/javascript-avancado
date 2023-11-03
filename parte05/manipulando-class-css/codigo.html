@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <style>
+            .highlight{
+                color: red;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 id="title">Título da página</h1>
+        <button id="change-color">Alterar cor</button>
+
+        <script>
+            //https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index
+
+            const titleEl = document.querySelector("#tile")
+
+            const buttonEl = document.querySelector("#change-color")
+            buttonEl.addEventListener("click", () =>{
+
+                if (titleEl.classList.contains("highlight")) { // Vai checar SE essa classe já existe nessa TAG
+                    titleEl.classList.remove("highlight") //SE já existe, vai excluir
+                } else {
+                    titleEl.classList.add("highlight"))
+                }
+            })
+        </script>
+    </body> 
+</html>
