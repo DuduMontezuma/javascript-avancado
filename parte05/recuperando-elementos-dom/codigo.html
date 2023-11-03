@@ -1,0 +1,46 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curriculum</title>
+    </head>
+    <body>
+        <h1 id="person-name" class="title">Seu nome</h1>
+        <h2>Programador JavaScript</h2>
+        <p>
+            Conhecimento em programação Frontend, Backend para desenvolvimento
+            de
+            Sistemas Fullstack.
+        </p>
+        <p>
+            Para mais detalhes, por favor, visite meu
+            <a href="http://github.com/dudumontezuma">Github</a>
+        </p>
+        <script>
+            // Hierarquia de DOM
+            // Document --> Nodes --> Elements --> Attributes
+
+            //console.log(document) //certo
+            //console.log(document.body) //certo
+            //console.log(document.body.h1) //errado
+
+            // Acessando os nós de DOM
+
+            // document.getElementById()
+            // const titleEl = document.getElementById("person-name")
+            // console.log("titleEL", titleEl)
+
+            // document.getElementByTagName()
+            // const titleEl = document.getElementByTagName("h1")
+            // console.log("titleEl", titleEl)
+
+            // document.getElementByClassName()
+            const titleEl = document.getElementByClassName(title)
+            console.log("titleEl", titleEl)
+
+            // Iterando...
+            for (const el of titleEl){
+              console.log("el", el)    
+            }
+        </script>
+    </body>
+</html>
