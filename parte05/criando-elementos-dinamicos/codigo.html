@@ -1,0 +1,51 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Curriculum</title>
+    </head>
+    <body>
+        <h1 id="person-name" class="title">Seu nome</h1>
+        <h2>Programador JavaScript</h2>
+        <p>
+            Conhecimento em programação Frontend, Backend para desenvolvimento
+            de
+            Sistemas Fullstack.
+        </p>
+        <p>
+            Para mais detalhes, por favor, visite meu
+            <a href="http://github.com/dudumontezuma">Github</a>
+            <a href="www.linkedin.com/in/carloseduardomontezuma"></a>
+        </p>
+        <script>
+            // Criando elementos dinamicamente no DOM
+            // Ref.: https://developer.mozilla.org/pt-BR/docs/Web/API/Document/createElement
+
+            // Criando o elemento na memória 
+            const subTitleEl = document.createElement("h2")
+            subTitleEl.innerHTML = "Projetos"
+            // Até aqui
+
+            const pjListEl = document.createElement("ul") // Criando lista
+
+            // Criando elementos da lista
+            const pjListItem1E1 = document.createElement("li")
+            pjListItem1E1.innerHTML = "TODO MVC"
+
+            const pjListItem2E1 = document.createElement("li")
+            pjListItem2E1.innerHTML = "Github API"
+
+            const pjListItem3E1 = document.createElement("li")
+            pjListItem3E1.innerHTML = "eCommerce"
+
+            // Anexar itens na lista
+            pjListEl.append(pjListItem1E1)
+            pjListEl.append(pjListItem2E1)
+            pjListEl.append(pjListItem3E1)
+
+            document.body.append(subTitleEl) // Colocando o objeto dentro do documento
+            document.body.append(pjListEl) // Colocando a lista dentro do documento
+
+
+        </script>
+    </body>
+</html>
