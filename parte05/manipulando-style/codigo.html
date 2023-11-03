@@ -1,0 +1,18 @@
+<html>
+    <meta charset="UTF-8">
+    <body>
+        <h1 id="title">Título da página</h1>
+        <button id="change-color">Alterar cor</button>
+
+        <script>
+            //https://developer.mozilla.org/en-US/docs/Web/CSS/Reference#index
+
+            const titleEl = document.querySelector("#tile")
+
+            const buttonEl = document.querySelector("#change-color")
+            buttonEl.addEventListener("click", () =>{
+                titleEl.style = "color: red; font-size: 75px"
+            })
+        </script>
+    </body> 
+</html>
