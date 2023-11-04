@@ -1,0 +1,29 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+    </head>
+    <body>
+        <script>
+            const person = {
+                name: "Dudu Montezuma",
+                age: 35,
+                address: {
+                    street: "Rua Toppen",
+                    number: "245",
+                    complement: "",
+                    district: "Centro",
+                    city: "Nova Yorque",
+                    state: "São Paulo",
+                }
+            }
+
+            const personStr = JSON.stringify(person)
+
+            console.log(personStr)
+
+            const personObj = JSON.parse(personStr)
+
+            console.log(personObj)
+        </script>
+    </body>
+</html>
