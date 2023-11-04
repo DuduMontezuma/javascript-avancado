@@ -18,16 +18,16 @@
         let count = 0
 
         function testPromisse(){
-            const promisseCount = ++
+            const promiseCount = ++
 
             console.log("sync started")
 
-            return new Promisse((resolve, reject) => {
+            return new Promise((resolve, reject) => {
                 setTimeout(() => {
-                    if (promisseCount % 2 == 0) {
+                    if (promiseCount % 2 == 0) {
                         resolve(promiseCount)
                     } else {
-                        reject(promisseCount)
+                        reject(promiseCount)
                     }
                 }, 1000)
             })
