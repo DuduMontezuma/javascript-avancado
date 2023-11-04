@@ -22,7 +22,7 @@
 
             console.log("sync started")
 
-            return new Promise((resolve, reject) => {
+            new Promise((resolve, reject) => {
                 setTimeout(() => {
                     if (promiseCount % 2 == 0) {
                         resolve(promiseCount)
